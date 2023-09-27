@@ -1,0 +1,10 @@
+services:
+  qcms-app:
+    container_name: next-env-app
+    build:
+      context: .
+    environment:
+      NODE_ENV: production
+      MY_VAR: FromDocker
+    ports:
+      - 3000:3000
